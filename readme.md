@@ -3,6 +3,8 @@
 A full‑stack GenAI assistant that lets authenticated users chat with a context‑aware, semantic‑search‑powered GPT‑4 backend. It supports text and voice input, multi‑session chat history persisted per user, and is fully dockerized.
 
 ---
+![ISSAC Architecture Diagram](docs/images/architecture.png)
+
 
 ## Table of Contents
 
@@ -171,7 +173,7 @@ docker-compose up --build
 ├── README.md
 ├── .env                
 └── static/
-    ├── index.html
+    ├── index.html`
     ├── css/
     │   └── style.css
     └── js/
