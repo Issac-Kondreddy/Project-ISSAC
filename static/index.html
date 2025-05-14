@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>ISSAC Assistant</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- AUTH VIEW -->
+  <div id="auth-view" class="view">
+    <div class="auth-card">
+      <h2>Welcome to ISSAC</h2>
+      <div class="tabs">
+        <button id="tab-login" class="tab active">Login</button>
+        <button id="tab-register" class="tab">Register</button>
+      </div>
+      <form id="auth-form">
+        <input id="auth-username" type="text" placeholder="Username" required />
+        <input id="auth-password" type="password" placeholder="Password" required />
+        <button id="auth-submit" type="submit">Login</button>
+      </form>
+      <p id="auth-msg" class="msg"></p>
+    </div>
+  </div>
+
+  <!-- CHAT VIEW -->
+  <div id="chat-view" class="view hidden">
+    <header id="app-header">
+      <div id="header-left">
+        <div id="app-title">ISSAC</div>
+        <div id="app-subtitle">
+          Intelligent System for Semantic Assistance and Comprehension
+        </div>
+      </div>
+      <button id="logout-btn" class="icon-btn" title="Logout">🚪</button>
+    </header>
+    <div id="main">
+      <aside id="sidebar">
+        <div class="sidebar-header">
+          <div id="sidebar-greeting" class="sidebar-greeting"></div>
+          <button id="btn-new-chat" class="new-chat-btn">+ New Chat</button>
+        </div>
+        <ul id="session-list" class="session-list"></ul>
+      </aside>
+      <section id="chat-area">
+        <div id="chat-greeting" class="chat-greeting"></div>
+        <div id="messages" class="messages"></div>
+        <div id="input-area" class="input-area">
+          <button id="mic-btn" class="icon-btn" title="Voice">🎤</button>
+          <input
+            id="chat-input"
+            type="text"
+            placeholder="What do you want to know?"
+            autocomplete="off"
+          />
+          <button id="send-btn" class="icon-btn" title="Send">↵</button>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- Defer so DOM is ready -->
+  <script src="js/auth.js" defer></script>
+  <script src="js/chat.js" defer></script>
+</body>
+</html>

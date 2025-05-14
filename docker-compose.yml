@@ -1,0 +1,11 @@
+# docker-compose.yml
+version: "3.8"
+
+services:
+  issac:
+    build: .
+    ports:
+      - "5020:5020"
+    env_file:
+      - .env
+    restart: unless-stopped

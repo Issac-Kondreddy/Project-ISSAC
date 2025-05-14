@@ -1,0 +1,9 @@
+flask
+gunicorn
+boto3
+faiss-cpu
+flask-jwt-extended
+passlib
+python-dotenv
+openai
+sentence-transformers
